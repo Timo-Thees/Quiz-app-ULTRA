@@ -1,0 +1,36 @@
+@import url(Style.css);
+
+#fixedFooter {
+  width: 100vw;
+  bottom: 0;
+  height: 80px;
+  padding-bottom: 4vh;
+  position: fixed;
+  z-index: 1;
+  background-color: var(--accent-color);
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  font-size: 30px;
+  justify-content: space-around;
+}
+
+.icon {
+  width: 30px;
+  padding: 20px;
+  background-color: var(--bg-color);
+  border-radius: 100%;
+}
+
+.icon:hover {
+  border-radius: 25%;
+  transition: all 0.3s ease-in;
+  background-color: var(--highlight-color1);
+}
+.icon:active {
+  transition: all 0.3s ease-in;
+  background-color: rgb(231, 228, 197);
+  box-shadow: 3px 3px 7px rgb(10, 67, 94) inset;
+}
