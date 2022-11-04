@@ -3,23 +3,7 @@ import { Header } from "./components/Header";
 import { Navigation } from "./components/Navigation";
 import { Card } from "./components/Card";
 import { useState } from "react";
-
-const cardData = [
-  {
-    id: 1,
-    question: "Testfrage",
-    answer: "Testantwort",
-    tags: ["a", "b"],
-    bookmarked: false,
-  },
-  {
-    id: 2,
-    question: "Testfrage 2",
-    answer: "Testantwort 2",
-    tags: ["c", "d"],
-    bookmarked: true,
-  },
-];
+import cardData from "./components/CardData";
 
 function App() {
   const [cards, setCards] = useState(cardData);
@@ -38,8 +22,8 @@ function App() {
   };
 
   return (
-    <div className="app">
-      {/* <Header /> */}
+    <div className="app main">
+      <Header />
       {cards.map((card) => {
         return (
           <Card
